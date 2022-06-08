@@ -17,7 +17,7 @@ import { graphql, Link } from "gatsby"
 import GlobalStateProvider from "../context/provider"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ProjectItem from "./projectItem"
+import ProjectItem from "../components/ProjectItem"
 
 const StyledSection = styled.section`
   width: 100%;
