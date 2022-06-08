@@ -98,7 +98,7 @@ module.exports = {
     button: {
       useFileName: true,
       name: "Resume",
-      fileName: "Ql5gpx32B7wjCGpshmAjOLjV1iRQJDPfBKr3cZksc2E.pdf", // the file has to be placed inside the static folder at the root level
+      fileName: "cv.pdf", // the file has to be placed inside the static folder at the root level
       url: "", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
     },
   },

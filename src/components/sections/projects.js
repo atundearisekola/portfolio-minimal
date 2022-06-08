@@ -248,12 +248,12 @@ const Projects = ({ content }) => {
   }
 
   // Required for animating the button
-  const bRef = useRef()
-  const bOnScreen = useOnScreen(bRef)
-  const bVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  }
+  // const bRef = useRef()
+  // const bOnScreen = useOnScreen(bRef)
+  // const bVariants = {
+  //   hidden: { opacity: 0 },
+  //   visible: { opacity: 1 },
+  // }
 
   return (
     <StyledSection id="projects">
