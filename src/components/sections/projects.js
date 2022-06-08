@@ -13,6 +13,7 @@ import Underlining from "../../styles/underlining"
 import Button from "../../styles/button"
 import Icon from "../../components/icons"
 import { lightTheme, darkTheme } from "../../styles/theme"
+import { Link } from "gatsby"
 
 const StyledSection = styled.section`
   width: 100%;
@@ -288,8 +289,12 @@ const Projects = ({ content }) => {
                     <div className="category">
                       {frontmatter.emoji} {frontmatter.category}
                     </div>
-                    <div className="title">{frontmatter.title}</div>
-                    <MDXRenderer>{body}</MDXRenderer>
+
+                    <Link to={"/projects/" + frontmatter.slug} >
+                      <div className="title">{frontmatter.title}</div>
+                    </Link>
+                   
+                    <p>{frontmatter.description}</p>
                     <div className="tags">
                       {frontmatter.tags.map(tag => (
                         <Underlining key={tag} highlight>
@@ -349,7 +354,7 @@ const Projects = ({ content }) => {
           })}
         </div>
       </StyledContentWrapper>
-      {sectionDetails.frontmatter.buttonVisible && (
+      {/* {sectionDetails.frontmatter.buttonVisible && (
         <motion.a
           ref={bRef}
           variants={bVariants}
@@ -364,7 +369,7 @@ const Projects = ({ content }) => {
             {sectionDetails.frontmatter.buttonText}
           </Button>
         </motion.a>
-      )}
+      )} */}
     </StyledSection>
   )
 }

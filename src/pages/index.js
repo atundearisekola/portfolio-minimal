@@ -139,6 +139,8 @@ export const pageQuery = graphql`
           body
           frontmatter {
             title
+            description
+            slug
             category
             emoji
             external

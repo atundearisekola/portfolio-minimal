@@ -25,6 +25,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
+    
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
